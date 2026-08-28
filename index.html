@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
-        /* ===== БАЗОВЫЕ СТИЛИ (без изменений) ===== */
         *,
         *::before,
         *::after {
@@ -60,7 +59,7 @@
             padding: 0 24px;
         }
 
-        /* ===== КНОПКА ВВЕРХ ===== */
+        
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -90,7 +89,6 @@
             transform: translateY(-4px);
         }
 
-        /* ===== ШАПКА ===== */
         .header {
             background: linear-gradient(135deg, var(--primary) 0%, #5a3834 100%);
             color: var(--text-light);
@@ -141,7 +139,6 @@
             color: var(--secondary);
         }
 
-        /* ===== ГЕРОЙ ===== */
         .hero {
             padding: 60px 0 50px;
             text-align: center;
@@ -173,7 +170,6 @@
             border-radius: 4px;
         }
 
-        /* ===== СЕКЦИИ ===== */
         .section {
             padding: 60px 0;
         }
@@ -192,7 +188,6 @@
             font-size: 1.05rem;
         }
 
-        /* ===== ПАПКИ (АЛЬБОМЫ) НА ГЛАВНОЙ ===== */
         .folders-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -241,7 +236,6 @@
             letter-spacing: 0.3px;
         }
 
-        /* ===== СТРАНИЦА АЛЬБОМА (только фото, без подписей) ===== */
         .album-page {
             display: none;
             padding: 20px 0 40px;
@@ -304,7 +298,6 @@
             transform: scale(1.02);
         }
 
-        /* ===== СЕМЬЯ (ОБНОВЛЁННЫЙ БЛОК) ===== */
         .family-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -356,7 +349,6 @@
             letter-spacing: 0.3px;
         }
 
-        /* ===== ХРОНОЛОГИЯ ===== */
         .timeline {
             position: relative;
             max-width: 800px;
@@ -413,7 +405,6 @@
             margin-top: 4px;
         }
 
-        /* ===== ЦИТАТА ===== */
         .quote-section {
             background: var(--primary);
             color: var(--text-light);
@@ -442,7 +433,6 @@
             letter-spacing: 1px;
         }
 
-        /* ===== ПОДВАЛ ===== */
         .footer {
             background: #1f1412;
             color: #b8a8a2;
@@ -473,7 +463,6 @@
             color: #e74c3c;
         }
 
-        /* ===== ЛАЙТБОКС (без подписей) ===== */
         .lightbox {
             position: fixed;
             top: 0;
@@ -655,12 +644,10 @@
 </head>
 <body>
 
-    <!-- ===== КНОПКА ВВЕРХ ===== -->
     <button class="back-to-top" id="backToTop" aria-label="Наверх">
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- ===== ШАПКА ===== -->
     <header class="header" id="top">
         <div class="container header-inner">
             <div class="logo">
@@ -676,7 +663,6 @@
         </div>
     </header>
 
-    <!-- ===== ГЕРОЙ ===== -->
     <section class="hero">
         <div class="container">
             <h1>
@@ -692,18 +678,14 @@
         </div>
     </section>
 
-    <!-- ===== ГАЛЕРЕЯ ===== -->
     <section class="section" id="gallery">
         <div class="container">
 
-            <!-- Заголовок и подпись -->
             <h2 class="section-title">📁 Наши альбомы</h2>
             <p class="section-sub">Нажмите на папку, чтобы открыть альбом с фотографиями</p>
 
-            <!-- ===== ПАПКИ (АЛЬБОМЫ) НА ГЛАВНОЙ ===== -->
             <div class="folders-grid" id="foldersGrid"></div>
 
-            <!-- ===== СТРАНИЦА АЛЬБОМА (скрыта по умолчанию) ===== -->
             <div class="album-page" id="albumPage">
                 <div class="page-header">
                     <h2 id="albumPageTitle">Название альбома</h2>
@@ -715,7 +697,6 @@
         </div>
     </section>
 
-    <!-- ===== СЕМЬЯ (ОБНОВЛЁННЫЙ БЛОК) ===== -->
     <section class="section" id="family" style="background: #f5ece4;">
         <div class="container">
             <h2 class="section-title">👨‍👩‍👧‍👦 Наша семья</h2>
@@ -787,7 +768,6 @@
                     <p>Племянник, озорной и энергичный</p>
                     <span class="role">Племянник</span>
                 </div>
-                <!-- ДОБАВЛЕНЫ ДВА НОВЫХ ЧЛЕНА СЕМЬИ -->
                 <div class="family-member">
                     <img class="avatar" src="image\иконки\photo_2_2026-08-28_15-50-04.jpg" alt="Лёша" loading="lazy" />
                     <h4>Лёша</h4>
@@ -804,7 +784,6 @@
         </div>
     </section>
 
-    <!-- ===== ХРОНОЛОГИЯ ===== -->
     <section class="section" id="timeline">
         <div class="container">
             <h2 class="section-title">📖 Наша история</h2>
@@ -856,7 +835,6 @@
         </div>
     </section>
 
-    <!-- ===== ЦИТАТА ===== -->
     <section class="quote-section" id="quote">
         <div class="container">
             <blockquote>
@@ -866,7 +844,6 @@
         </div>
     </section>
 
-    <!-- ===== ПОДВАЛ ===== -->
     <footer class="footer">
         <div class="container">
             <div class="social">
@@ -883,7 +860,6 @@
         </div>
     </footer>
 
-    <!-- ===== ЛАЙТБОКС ===== -->
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">&times;</button>
         <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Предыдущее"><i class="fas fa-chevron-left"></i></button>
@@ -894,12 +870,10 @@
         </div>
     </div>
 
-    <!-- ===== СКРИПТ (без изменений) ===== -->
     <script>
         (function() {
             'use strict';
 
-            // ===== ДАННЫЕ АЛЬБОМОВ =====
             const albums = {
                 'Геш': [
                     { src: 'image\\геш\\photo_1_2026-08-28_13-31-50.jpg', title: 'Уютный ужин', desc: 'Июль 2025 · Дом бабушки', badge: '🍲' },
@@ -1053,18 +1027,15 @@
                 ]
             };
 
-            // ===== СОСТОЯНИЕ =====
-            let currentCategory = null; // null означает, что мы на главной с папками
+            let currentCategory = null; 
             let currentPhotos = [];
 
-            // ===== ЭЛЕМЕНТЫ =====
             const foldersGrid = document.getElementById('foldersGrid');
             const albumPage = document.getElementById('albumPage');
             const albumPageGrid = document.getElementById('albumPageGrid');
             const albumPageTitle = document.getElementById('albumPageTitle');
             const backBtn = document.getElementById('backToFoldersBtn');
 
-            // Лайтбокс
             const lightbox = document.getElementById('lightbox');
             const lightboxImage = document.getElementById('lightboxImage');
             const lbCounter = document.getElementById('lightboxCounter');
@@ -1073,7 +1044,6 @@
             const nextBtn = document.getElementById('lightboxNext');
             let lightboxIndex = 0;
 
-            // ===== РЕНДЕР ПАПОК НА ГЛАВНОЙ =====
             function renderFolders() {
                 foldersGrid.innerHTML = '';
                 const keys = Object.keys(albums);
@@ -1099,20 +1069,16 @@
                 });
             }
 
-            // ===== ОТКРЫТЬ СТРАНИЦУ АЛЬБОМА =====
             function openAlbum(category) {
                 currentCategory = category;
                 currentPhotos = albums[category] || [];
 
-                // Обновляем URL
                 const url = new URL(window.location);
                 url.searchParams.set('album', category);
                 window.history.pushState({ category: category }, '', url);
 
-                // Заголовок
                 albumPageTitle.textContent = '📸 ' + category;
 
-                // Заполняем сетку страницы альбома
                 albumPageGrid.innerHTML = '';
                 if (currentPhotos.length === 0) {
                     albumPageGrid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:#7a6a64;">В этом альбоме пока нет фотографий.</p>';
@@ -1120,7 +1086,6 @@
                     currentPhotos.forEach((photo, index) => {
                         const card = document.createElement('div');
                         card.className = 'page-card';
-                        // Только изображение, без подписей
                         card.innerHTML = `
                             <img src="${photo.src}" alt="Фото" loading="lazy" />
                         `;
@@ -1131,14 +1096,11 @@
                     });
                 }
 
-                // Показать страницу альбома, скрыть папки
                 albumPage.classList.add('active');
                 foldersGrid.style.display = 'none';
 
-                // Прокрутка к началу секции
                 document.getElementById('gallery').scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-                // Анимация карточек
                 setTimeout(() => {
                     const cards = document.querySelectorAll('.page-card');
                     cards.forEach((el, i) => {
@@ -1150,9 +1112,7 @@
                 }, 100);
             }
 
-            // ===== ВЕРНУТЬСЯ НА ГЛАВНУЮ (показать папки) =====
             function showFolders() {
-                // Убираем параметр album из URL
                 const url = new URL(window.location);
                 url.searchParams.delete('album');
                 window.history.pushState({ category: null }, '', url);
@@ -1163,7 +1123,6 @@
                 document.getElementById('gallery').scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
 
-            // ===== ЛАЙТБОКС =====
             function openLightbox(index) {
                 if (!currentPhotos.length) return;
                 lightboxIndex = index;
@@ -1198,7 +1157,6 @@
                 updateLightbox();
             }
 
-            // ===== ОБРАБОТЧИКИ ЛАЙТБОКСА =====
             closeBtn.addEventListener('click', closeLightbox);
             prevBtn.addEventListener('click', prevPhoto);
             nextBtn.addEventListener('click', nextPhoto);
@@ -1212,10 +1170,8 @@
                 if (e.key === 'ArrowRight') nextPhoto(e);
             });
 
-            // ===== КНОПКА "НАЗАД" =====
             backBtn.addEventListener('click', showFolders);
 
-            // ===== КНОПКА НАВЕРХ =====
             const backTop = document.getElementById('backToTop');
             window.addEventListener('scroll', function() {
                 backTop.classList.toggle('visible', window.scrollY > 400);
@@ -1224,7 +1180,6 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
 
-            // ===== ПЛАВНАЯ ПРОКРУТКА =====
             document.querySelectorAll('.nav a').forEach(link => {
                 link.addEventListener('click', function(e) {
                     const targetId = this.getAttribute('href');
@@ -1241,7 +1196,6 @@
                 });
             });
 
-            // ===== ОБРАБОТКА ИСТОРИИ =====
             window.addEventListener('popstate', function(e) {
                 const state = e.state;
                 if (state && state.category) {
@@ -1251,19 +1205,16 @@
                 }
             });
 
-            // ===== ИНИЦИАЛИЗАЦИЯ =====
             function init() {
                 const params = new URLSearchParams(window.location.search);
                 const album = params.get('album');
                 if (album && albums[album]) {
                     openAlbum(album);
                 } else {
-                    // Показываем папки
                     renderFolders();
                     albumPage.classList.remove('active');
                     foldersGrid.style.display = 'grid';
                     currentCategory = null;
-                    // Добавляем состояние в историю
                     const url = new URL(window.location);
                     url.searchParams.delete('album');
                     window.history.replaceState({ category: null }, '', url);
@@ -1272,7 +1223,6 @@
 
             init();
 
-            // ===== АНИМАЦИЯ ПОЯВЛЕНИЯ ПАПОК =====
             const folderObserver = new IntersectionObserver((entries) => {
                 entries.forEach((entry, index) => {
                     if (entry.isIntersecting) {
@@ -1285,7 +1235,6 @@
                 });
             }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
 
-            // Наблюдаем за папками
             function observeFolders() {
                 const folders = document.querySelectorAll('.folder-card');
                 folders.forEach(el => {
@@ -1296,14 +1245,12 @@
                 });
             }
 
-            // Переопределяем renderFolders, чтобы добавить анимацию
             const originalRenderFolders = renderFolders;
             renderFolders = function() {
                 originalRenderFolders();
                 setTimeout(observeFolders, 50);
             };
 
-            // Для элементов семьи и хронологии
             const elementObserver = new IntersectionObserver((entries) => {
                 entries.forEach((entry, index) => {
                     if (entry.isIntersecting) {
@@ -1323,7 +1270,6 @@
                 elementObserver.observe(el);
             });
 
-            // Дополнительно вызываем рендер папок после init
             setTimeout(() => {
                 if (!currentCategory) {
                     renderFolders();
